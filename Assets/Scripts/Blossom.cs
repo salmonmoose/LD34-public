@@ -1,24 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Pickup : MonoBehaviour
+public class Blossom : Pickup
 {
-
   public GameObject petalSplosion;
 
-  // Use this for initialization
-  void Start()
-  {
-
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
-  public void Activate()
+  public override void Activate()
   {
     Vine.instance.CollectBlossom();
     Instantiate(petalSplosion, transform.position, transform.rotation);

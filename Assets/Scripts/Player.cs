@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
   public float rotationSpeed = 10f;
 
-  private Vector3 nextPosition = Vector3.zero;
+  public Vector3 nextPosition = Vector3.zero;
 
   private Vector3 startPosition;
 
@@ -113,6 +113,11 @@ public class Player : MonoBehaviour
     {
       segmentTime = segmentTime - 0.005f;
     }
+  }
+
+  public void Slow()
+  {
+    segmentTime = segmentTime + 0.0025f;
   }
 
   void UpdatePlant()

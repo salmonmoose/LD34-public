@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41ee02b12aef86943b4a1eb40792696e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cocoonTemplate: {fileID: 133548, guid: da6b690bd8c944f4f91c6f11d6ac324e, type: 2}
   rotationVariance: 40
   nextSegment: 0
   segmentTime: 0.1
@@ -114,6 +115,10 @@ Prefab:
       propertyPath: m_Parameters.m_EndColor.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: cocoonTemplate
+      value: 
+      objectReference: {fileID: 133548, guid: da6b690bd8c944f4f91c6f11d6ac324e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177724}

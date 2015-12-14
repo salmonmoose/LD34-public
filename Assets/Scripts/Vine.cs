@@ -21,6 +21,7 @@ public class Vine : MonoBehaviour
   public GameObject gamePlayPanel;
 
   private int collectedBlossom = 0;
+  private int collectedCocoon = 0;
 
   public Text distanceDisplay;
   public Text blossomDisplay;
@@ -67,11 +68,18 @@ public class Vine : MonoBehaviour
     collectedBlossom++;
   }
 
+  public void CollectCocoon()
+  {
+    player.GetComponent<Player>().Slow();
+    collectedCocoon++;
+  }
+
   public void ResetGame()
   {
     player.GetComponent<Player>().Reset();
     level.GetComponent<DynamicWall>().Reset();
     collectedBlossom = 0;
+    collectedCocoon = 0;
   }
 
   // Update is called once per frame

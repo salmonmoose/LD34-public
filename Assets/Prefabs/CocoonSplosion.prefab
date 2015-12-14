@@ -1,49 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &132842
+--- !u!1 &118856
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 461772}
-  - 198: {fileID: 19828498}
-  - 199: {fileID: 19953712}
-  - 82: {fileID: 8297516}
+  - 4: {fileID: 415040}
+  - 198: {fileID: 19811228}
+  - 199: {fileID: 19954354}
+  - 114: {fileID: 11465570}
+  - 82: {fileID: 8203164}
   m_Layer: 0
-  m_Name: HeadParticles
+  m_Name: CocoonSplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &461772
+--- !u!4 &415040
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132842}
+  m_GameObject: {fileID: 118856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -19.110783, y: -1.3496444, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!82 &8297516
+--- !u!82 &8203164
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132842}
+  m_GameObject: {fileID: 118856}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c6f9ad1d1a159404189326e393ad1552, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 450f104df7123b04789ded01b36e5390, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.526
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -104,14 +105,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!198 &19828498
+--- !u!114 &11465570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55fbbb4dbeb72547b7d0b689d160a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!198 &19811228
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132842}
+  m_GameObject: {fileID: 118856}
   serializedVersion: 2
-  lengthInSec: 5
+  lengthInSec: 1
   startDelay:
     scalar: 0
     maxCurve:
@@ -149,16 +161,16 @@ ParticleSystem:
     minMaxState: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
-  moveWithTransform: 0
+  moveWithTransform: 1
   scalingMode: 1
   InitialModule:
     serializedVersion: 2
     enabled: 1
     startLifetime:
-      scalar: 5
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -193,7 +205,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     startSpeed:
-      scalar: 1
+      scalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -234,7 +246,7 @@ ParticleSystem:
           rgba: 4294967295
         key1:
           serializedVersion: 2
-          rgba: 16777215
+          rgba: 4294967295
         key2:
           serializedVersion: 2
           rgba: 0
@@ -322,7 +334,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 0.5
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -462,14 +474,14 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     randomizeRotationDirection: 0
-    gravityModifier: 1
+    gravityModifier: 0
     maxNumParticles: 1000
     rotation3D: 0
   ShapeModule:
     serializedVersion: 2
     enabled: 1
     type: 10
-    radius: 0.32
+    radius: 1
     angle: 25
     length: 5
     boxX: 1
@@ -490,7 +502,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 10
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -524,11 +536,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
       minMaxState: 0
-    cnt0: 30
+    cnt0: 20
     cnt1: 30
     cnt2: 30
     cnt3: 30
-    cntmax0: 30
+    cntmax0: 20
     cntmax1: 30
     cntmax2: 30
     cntmax3: 30
@@ -536,7 +548,7 @@ ParticleSystem:
     time1: 0
     time2: 0
     time3: 0
-    m_BurstCount: 0
+    m_BurstCount: 1
   SizeModule:
     enabled: 1
     curve:
@@ -647,7 +659,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     curve:
-      scalar: 6.283185
+      scalar: 12.56637
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -673,7 +685,7 @@ ParticleSystem:
       minMaxState: 3
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       maxGradient:
         key0:
@@ -681,7 +693,7 @@ ParticleSystem:
           rgba: 4294967295
         key1:
           serializedVersion: 2
-          rgba: 16777215
+          rgba: 4294967295
         key2:
           serializedVersion: 2
           rgba: 0
@@ -806,7 +818,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 1
     tilesX: 1
-    tilesY: 3
+    tilesY: 5
     animationType: 1
     rowIndex: 0
     cycles: 1
@@ -1177,7 +1189,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     magnitude:
-      scalar: 0.5
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1325,7 +1337,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     curve:
-      scalar: 0.7853981
+      scalar: 0.7853982
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1593,17 +1605,17 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19953712
+--- !u!199 &19954354
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132842}
+  m_GameObject: {fileID: 118856}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 63d3ee49095aa884191e75e9d9041daa, type: 2}
+  - {fileID: 2100000, guid: bd534eaa17d4834419c2f5f1a11cb873, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1642,62 +1654,14 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 5
+      propertyPath: m_Name
+      value: CocoonSplosion
       objectReference: {fileID: 0}
     - target: {fileID: 0}
-      propertyPath: InitialModule.gravityModifier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: InitialModule.startColor.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: InitialModule.startColor.maxGradient.key1.rgba
-      value: 16777215
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: ColorModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: ColorModule.gradient.minMaxState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: ColorModule.gradient.maxGradient.key1.rgba
-      value: 16777215
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: panLevelCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c6f9ad1d1a159404189326e393ad1552, type: 3}
-    - target: {fileID: 0}
-      propertyPath: m_Volume
-      value: 0.526
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: spreadCustomCurve.m_RotationOrder
+      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 132842}
+  m_RootGameObject: {fileID: 118856}
   m_IsPrefabParent: 1

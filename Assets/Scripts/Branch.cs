@@ -6,6 +6,8 @@ public class Branch : MonoBehaviour
 {
 
   private GameObject currentSegment;
+  public GameObject cocoonTemplate;
+  private GameObject cocoon;
   private Vector3 nextPosition;
 
   private LineRenderer lineRenderer;
@@ -50,7 +52,17 @@ public class Branch : MonoBehaviour
         nextSegment = Time.fixedTime + segmentTime;
 
         length--;
+
+        if (length == 100)
+        {
+          cocoon = Instantiate(cocoonTemplate, currentSegment.transform.position, Quaternion.identity) as GameObject;
+        }
       }
     }
+  }
+
+  void OnDestroy()
+  {
+    Destroy(cocoon);
   }
 }

@@ -1,0 +1,114 @@
+fileFormatVersion: 2
+guid: 26a3f0723de20e74b8bb3f2a6a1890a3
+timeCreated: 1450045194
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Monarch_0
+    21300002: Monarch_1
+    21300004: Monarch_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Monarch_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 101
+        width: 44
+        height: 102
+      alignment: 9
+      pivot: {x: 0.43046987, y: 0.64996696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.940674, y: 35.70337}
+        - {x: -18.940674, y: 20.70337}
+        - {x: -6.940674, y: -65.29663}
+        - {x: -5.940674, y: -66.29663}
+        - {x: 7.059326, y: -66.29663}
+        - {x: 25.059326, y: 25.70337}
+        - {x: 25.059326, y: 35.70337}
+    - name: Monarch_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 109
+        height: 91
+      alignment: 9
+      pivot: {x: 0.949075, y: 0.88814604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -89.44917, y: 10.178711}
+        - {x: -103.44917, y: 5.178711}
+        - {x: -103.44917, y: -25.82129}
+        - {x: -58.449173, y: -80.82129}
+        - {x: 5.550827, y: -80.82129}
+        - {x: 5.550827, y: 8.178711}
+        - {x: 1.550827, y: 10.178711}
+    - name: Monarch_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 121
+        height: 92
+      alignment: 9
+      pivot: {x: 0.07937168, y: 0.93229574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.603973, y: 6.2287903}
+        - {x: -9.603973, y: -23.77121}
+        - {x: -9.603973, y: -85.77121}
+        - {x: 63.396027, y: -85.77121}
+        - {x: 111.39603, y: -34.77121}
+        - {x: 111.39603, y: 2.2287903}
+        - {x: 104.39603, y: 6.2287903}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
